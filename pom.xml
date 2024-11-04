@@ -38,4 +38,5 @@
         <maven.compiler.target>22</maven.compiler.target>
         <exec.mainClass>com.mycompany.cw.Cw</exec.mainClass>
     </properties>
+    <name>Train Ticket Reservation System</name>
 </project>
