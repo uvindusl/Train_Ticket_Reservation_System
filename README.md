@@ -204,6 +204,6 @@ We appreciate your contributions and are excited to collaborate with you to impr
 [(Back to top)](#table-of-contents)
 
 This project is licensed under the MIT License. By using or contributing to this project, you agree to the terms specified in this license.
-[MIT license](./LICENSE)
+[MIT license]([./LICENSE](https://github.com/uvindusl/Train_Ticket_Reservation_System/blob/dbd738c45a5955ce893b45cf21ac9289a8186339/LICENSE.md))
 
 
