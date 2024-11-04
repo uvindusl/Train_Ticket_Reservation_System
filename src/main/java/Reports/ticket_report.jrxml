@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ticket_report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="625ac3f3-8c9e-4144-a7fe-1284a5a541b0">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="trainsystem"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM ticket]]>
+	</queryString>
+	<field name="Tid" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Tid"/>
+		<property name="com.jaspersoft.studio.field.label" value="Tid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ticket"/>
+	</field>
+	<field name="start" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="start"/>
+		<property name="com.jaspersoft.studio.field.label" value="start"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ticket"/>
+	</field>
+	<field name="end" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="end"/>
+		<property name="com.jaspersoft.studio.field.label" value="end"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ticket"/>
+	</field>
+	<field name="price" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="price"/>
+		<property name="com.jaspersoft.studio.field.label" value="price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ticket"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="10" width="595" height="39" uuid="2a5eba52-fef6-4f81-b8ec-fe8d84ce4a5d"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ticket Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-22" y="49" width="596" height="30" uuid="bdd9b3ba-9c5a-4c3d-8e54-39c37f54cf74"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Train Reservation System]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="400" y="11" width="88" height="18" uuid="5ee1e0e3-3846-4e90-bc1c-b10e86194ba3"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="491" y="11" width="60" height="18" uuid="1d1aa1fb-389b-4053-a70f-4f2d10e43fe6"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="73" splitType="Stretch">
+			<rectangle>
+				<reportElement x="54" y="30" width="447" height="41" uuid="3ca6c552-a626-4348-b212-1a86d73b84f0"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="53" y="39" width="90" height="22" uuid="69272025-ec35-4a0f-9a92-9a680c9a4212"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Train ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="39" width="119" height="22" uuid="f23e8d26-5f69-4f97-8f6e-22f7db4b41aa"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[From]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="262" y="39" width="120" height="22" uuid="296671e4-4df4-4890-8641-b854a5f75a35"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[To]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="39" width="119" height="22" uuid="fbdf5924-1fca-436c-93ab-bd68391e44cd"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<line>
+				<reportElement x="143" y="30" width="1" height="40" uuid="634d9141-aa5f-48dc-9eb0-4eb42efef3ca"/>
+			</line>
+			<line>
+				<reportElement x="262" y="30" width="1" height="40" uuid="7df365f1-9518-41e2-8153-814061d1a56d"/>
+			</line>
+			<line>
+				<reportElement x="382" y="30" width="1" height="40" uuid="5a7f011b-8286-45d1-9081-9e793771d7b7"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="50" splitType="Stretch">
+			<rectangle>
+				<reportElement x="54" y="-12" width="447" height="51" uuid="6f94956a-f2a9-43a4-9456-b0db6b0ab469"/>
+			</rectangle>
+			<line>
+				<reportElement x="143" y="-12" width="1" height="51" uuid="794fddc8-2433-4aa5-9281-85b5bd5f8f2f"/>
+			</line>
+			<line>
+				<reportElement x="262" y="-12" width="1" height="51" uuid="ce5134fd-1c04-46e3-8145-d2c472fbb8a0"/>
+			</line>
+			<line>
+				<reportElement x="382" y="-12" width="1" height="51" uuid="22ec0ccb-fd9b-461f-ae8e-5f9447d659f6"/>
+			</line>
+			<textField>
+				<reportElement x="56" y="-3" width="88" height="30" uuid="ed780e25-d7c6-44c6-b08e-73b82f0f557b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Tid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="-2" width="100" height="30" uuid="3583768c-a2c9-4348-8269-e41fd3928cfd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{start}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="272" y="-3" width="100" height="30" uuid="3f5b9655-4c68-4247-a65e-8ec1239861a2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{end}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="388" y="-3" width="100" height="30" uuid="f22c32ac-38a8-4e0f-b21d-5507e7ca7449"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="-21" y="4" width="594" height="30" uuid="7e0a2db9-7143-47bd-91a3-75040ea6c76b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19"/>
+				</textElement>
+				<text><![CDATA[Thank You...]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-21" y="34" width="596" height="19" uuid="a03c1e0b-2c1e-460f-9bb0-413a7c99394a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[This report genarated by system]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

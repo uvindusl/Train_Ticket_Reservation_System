@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="jMenu1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="File&#xa;"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Logout"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Exit"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem2ActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Manage"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Book Ticket"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem3ActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="System"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Get Train Details"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem4ActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Customer Dashboard"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowOpened"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jPanel4" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" pref="600" max="-2" attributes="0"/>
+                          <Component id="btnselect" min="-2" pref="130" max="-2" attributes="0"/>
+                          <Component id="jLabel8" alignment="0" min="-2" pref="132" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jLabel5" min="-2" pref="404" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="25" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                  <Component id="jLabel5" min="-2" pref="54" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="btnselect" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="345" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="jTable1">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder>
+                      <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="4" rowCount="0">
+                    <Column editable="true" title="Train ID" type="java.lang.Object"/>
+                    <Column editable="true" title="Train Name" type="java.lang.Object"/>
+                    <Column editable="true" title="From" type="java.lang.Object"/>
+                    <Column editable="true" title="To" type="java.lang.Object"/>
+                  </Table>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="99" red="0" type="rgb"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel9" min="-2" pref="130" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                          <Component id="jLabel2" alignment="0" min="-2" pref="102" max="-2" attributes="0"/>
+                          <Component id="jLabel3" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="jLabel4" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Book Ticket"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel1MouseClicked"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="View Profile"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel2MouseClicked"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Log out"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel3MouseClicked"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel4">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Exit"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel4MouseClicked"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel9">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="View Old Bookings"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel9MouseClicked"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Wellcome to Train Ticket Reservation..."/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JPanel" name="jPanel4">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="combostart" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel6" alignment="0" min="-2" pref="72" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="121" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="comboend" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel7" min="-2" pref="37" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace pref="13" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="combostart" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="comboend" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JComboBox" name="comboend">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI Semibold" size="14" style="0"/>
+                </Property>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="207">
+                    <StringItem index="0" value="Colombo Fort"/>
+                    <StringItem index="1" value="Maradana"/>
+                    <StringItem index="2" value="Dematagoda"/>
+                    <StringItem index="3" value="Kelaniya"/>
+                    <StringItem index="4" value="Wanawasala"/>
+                    <StringItem index="5" value="Hunupitiya"/>
+                    <StringItem index="6" value="Enderamulla"/>
+                    <StringItem index="7" value="Horape"/>
+                    <StringItem index="8" value="Ragama"/>
+                    <StringItem index="9" value="Walpola"/>
+                    <StringItem index="10" value="Batuwatte"/>
+                    <StringItem index="11" value="Bulugahagoda"/>
+                    <StringItem index="12" value="Ganemulla"/>
+                    <StringItem index="13" value="Yagoda"/>
+                    <StringItem index="14" value="Gampaha"/>
+                    <StringItem index="15" value="Daraluwa"/>
+                    <StringItem index="16" value="Bemmulla"/>
+                    <StringItem index="17" value="Magelegoda"/>
+                    <StringItem index="18" value="Heendeniya"/>
+                    <StringItem index="19" value="Veyangoda"/>
+                    <StringItem index="20" value="Wandurawa"/>
+                    <StringItem index="21" value="Keenawala"/>
+                    <StringItem index="22" value="Pallewela"/>
+                    <StringItem index="23" value="Ganegoda"/>
+                    <StringItem index="24" value="Wijayarajadahana"/>
+                    <StringItem index="25" value="Mihirigama"/>
+                    <StringItem index="26" value="Wilwatte"/>
+                    <StringItem index="27" value="Botale"/>
+                    <StringItem index="28" value="Abeypussa"/>
+                    <StringItem index="29" value="Yattalgoda"/>
+                    <StringItem index="30" value="Buthgamuwa"/>
+                    <StringItem index="31" value="Alawwa"/>
+                    <StringItem index="32" value="Walakubura"/>
+                    <StringItem index="33" value="Polgahawela"/>
+                    <StringItem index="34" value="Panaleeya"/>
+                    <StringItem index="35" value="Tismalpola"/>
+                    <StringItem index="36" value="Yatagama"/>
+                    <StringItem index="37" value="Rambukkana"/>
+                    <StringItem index="38" value="Kadigamuwa"/>
+                    <StringItem index="39" value="Gangoda"/>
+                    <StringItem index="40" value="Ihalakotte"/>
+                    <StringItem index="41" value="Balana"/>
+                    <StringItem index="42" value="Kadugannawa"/>
+                    <StringItem index="43" value="Pilimatalawa"/>
+                    <StringItem index="44" value="Peradeniya"/>
+                    <StringItem index="45" value="Koshinna"/>
+                    <StringItem index="46" value="Gelioya"/>
+                    <StringItem index="47" value="Gampola"/>
+                    <StringItem index="48" value="Thawigala"/>
+                    <StringItem index="49" value="Ulapone"/>
+                    <StringItem index="50" value="Nawalapitiya"/>
+                    <StringItem index="51" value="Inguruoya"/>
+                    <StringItem index="52" value="Galaboda"/>
+                    <StringItem index="53" value="Watawala"/>
+                    <StringItem index="54" value="Ihalawatawala"/>
+                    <StringItem index="55" value="Rosella"/>
+                    <StringItem index="56" value="Hatton"/>
+                    <StringItem index="57" value="Kotagala"/>
+                    <StringItem index="58" value="Talawakele"/>
+                    <StringItem index="59" value="Watagoda"/>
+                    <StringItem index="60" value="Great Western"/>
+                    <StringItem index="61" value="Radella"/>
+                    <StringItem index="62" value="Nanuoya"/>
+                    <StringItem index="63" value="Perakumpura"/>
+                    <StringItem index="64" value="Ambewela"/>
+                    <StringItem index="65" value="Pattipola"/>
+                    <StringItem index="66" value="Ohiya"/>
+                    <StringItem index="67" value="Idalgasinna"/>
+                    <StringItem index="68" value="Haputale"/>
+                    <StringItem index="69" value="Deyatalawa"/>
+                    <StringItem index="70" value="Bandarawela"/>
+                    <StringItem index="71" value="Kinigama"/>
+                    <StringItem index="72" value="Heeloya"/>
+                    <StringItem index="73" value="Kitalelle"/>
+                    <StringItem index="74" value="Ella"/>
+                    <StringItem index="75" value="Demodara"/>
+                    <StringItem index="76" value="Uduwara"/>
+                    <StringItem index="77" value="Hali Ela"/>
+                    <StringItem index="78" value="Badulla"/>
+                    <StringItem index="79" value="Matale"/>
+                    <StringItem index="80" value="Peradeniya Junction"/>
+                    <StringItem index="81" value="KiribathKumbura"/>
+                    <StringItem index="82" value="Barammane"/>
+                    <StringItem index="83" value="Pilimatalawa"/>
+                    <StringItem index="84" value="Urapola"/>
+                    <StringItem index="85" value="Kotabagolla"/>
+                    <StringItem index="86" value="Kadugannawa"/>
+                    <StringItem index="87" value="Weralugolla"/>
+                    <StringItem index="88" value="Balana"/>
+                    <StringItem index="89" value="Makehelwala"/>
+                    <StringItem index="90" value="Bambaragala"/>
+                    <StringItem index="91" value="Ihalakotte"/>
+                    <StringItem index="92" value="Gangoda"/>
+                    <StringItem index="93" value="Yatiwaldeinya"/>
+                    <StringItem index="94" value="Kadigamuwa"/>
+                    <StringItem index="95" value="Rambukkan Oya"/>
+                    <StringItem index="96" value="Yatagama"/>
+                    <StringItem index="97" value="Korossa"/>
+                    <StringItem index="98" value="Tismalpola"/>
+                    <StringItem index="99" value="Panaliya"/>
+                    <StringItem index="100" value="Polgahawela Junction"/>
+                    <StringItem index="101" value="Walakumbura"/>
+                    <StringItem index="102" value="Bujjomuwa"/>
+                    <StringItem index="103" value="Yattalgoda"/>
+                    <StringItem index="104" value="Maha Oya"/>
+                    <StringItem index="105" value="Ambepussa"/>
+                    <StringItem index="106" value="Botale"/>
+                    <StringItem index="107" value="Tunnel No. 1"/>
+                    <StringItem index="108" value="Wilwatta"/>
+                    <StringItem index="109" value="Mirigama"/>
+                    <StringItem index="110" value="Wijayarajadahana"/>
+                    <StringItem index="111" value="E04 Central Expressway"/>
+                    <StringItem index="112" value="Ganegoda"/>
+                    <StringItem index="113" value="Pallewela"/>
+                    <StringItem index="114" value="Keenawala"/>
+                    <StringItem index="115" value="Wadurawa"/>
+                    <StringItem index="116" value="Veyangoda"/>
+                    <StringItem index="117" value="Heendeniya Pattiyagoda"/>
+                    <StringItem index="118" value="Magalegoda"/>
+                    <StringItem index="119" value="Bemmulla"/>
+                    <StringItem index="120" value="Daraluwa"/>
+                    <StringItem index="121" value="Gampaha"/>
+                    <StringItem index="122" value="Attanagalu Oya"/>
+                    <StringItem index="123" value="Yagoda"/>
+                    <StringItem index="124" value="Ganemulla"/>
+                    <StringItem index="125" value="Bulugahagoda"/>
+                    <StringItem index="126" value="Batuwaththa"/>
+                    <StringItem index="127" value="Walpola"/>
+                    <StringItem index="128" value="Puttalam Line"/>
+                    <StringItem index="129" value="Ragama Junction"/>
+                    <StringItem index="130" value="Horape"/>
+                    <StringItem index="131" value="Ederamulla"/>
+                    <StringItem index="132" value="Hunupitiya"/>
+                    <StringItem index="133" value="Wanawasala"/>
+                    <StringItem index="134" value="Kelaniya"/>
+                    <StringItem index="135" value="Kelani River"/>
+                    <StringItem index="136" value="Dematagoda"/>
+                    <StringItem index="137" value="Kelani Valley Line"/>
+                    <StringItem index="138" value="Maradana"/>
+                    <StringItem index="139" value="Colombo Fort"/>
+                    <StringItem index="140" value="Coast Line"/>
+                    <StringItem index="141" value="Katharagama"/>
+                    <StringItem index="142" value="Hambantota"/>
+                    <StringItem index="143" value="Beliatta"/>
+                    <StringItem index="144" value="Dedduwawala"/>
+                    <StringItem index="145" value="Wavurukannala"/>
+                    <StringItem index="146" value="Akurubebila Tunnel"/>
+                    <StringItem index="147" value="Babarenda"/>
+                    <StringItem index="148" value="Kekanadura"/>
+                    <StringItem index="149" value="Nakuttiyagama Tunnel"/>
+                    <StringItem index="150" value="Weherahena"/>
+                    <StringItem index="151" value="Nilwala Ganga"/>
+                    <StringItem index="152" value="Piladuwa"/>
+                    <StringItem index="153" value="Walgama"/>
+                    <StringItem index="154" value="Kamburugamuwa"/>
+                    <StringItem index="155" value="Midigama"/>
+                    <StringItem index="156" value="Ahangama"/>
+                    <StringItem index="157" value="Kathaluwa"/>
+                    <StringItem index="158" value="Koggala Lagoon"/>
+                    <StringItem index="159" value="Talpe"/>
+                    <StringItem index="160" value="Unawatuna"/>
+                    <StringItem index="161" value="Katugoda"/>
+                    <StringItem index="162" value="Richmond Hill"/>
+                    <StringItem index="163" value="Piyadigama"/>
+                    <StringItem index="164" value="Ginthota"/>
+                    <StringItem index="165" value="Gin Ganga"/>
+                    <StringItem index="166" value="Boossa"/>
+                    <StringItem index="167" value="Rathgama Lagoon"/>
+                    <StringItem index="168" value="Kumarakanda"/>
+                    <StringItem index="169" value="Sinigama"/>
+                    <StringItem index="170" value="Telwatta"/>
+                    <StringItem index="171" value="Kahawa"/>
+                    <StringItem index="172" value="Akurala"/>
+                    <StringItem index="173" value="Madampe Lagoon"/>
+                    <StringItem index="174" value="Ambalangoda"/>
+                    <StringItem index="175" value="Kandegoda"/>
+                    <StringItem index="176" value="Andadola"/>
+                    <StringItem index="177" value="Madu Ganga"/>
+                    <StringItem index="178" value="Balapitiya"/>
+                    <StringItem index="179" value="Pathagangoda"/>
+                    <StringItem index="180" value="Ahungalla"/>
+                    <StringItem index="181" value="Piyagama"/>
+                    <StringItem index="182" value="Kosgoda"/>
+                    <StringItem index="183" value="Maha Induruwa"/>
+                    <StringItem index="184" value="Induruwa"/>
+                    <StringItem index="185" value="Bentota"/>
+                    <StringItem index="186" value="Benthota Ganga"/>
+                    <StringItem index="187" value="Hettimulla"/>
+                    <StringItem index="188" value="Beruwala"/>
+                    <StringItem index="189" value="Maggona"/>
+                    <StringItem index="190" value="Paiyagala South"/>
+                    <StringItem index="191" value="Paiyagala North"/>
+                    <StringItem index="192" value="Katukurunda"/>
+                    <StringItem index="193" value="Kalutara South"/>
+                    <StringItem index="194" value="Kalutara North"/>
+                    <StringItem index="195" value="Train Halt No 01"/>
+                    <StringItem index="196" value="Wadduwa"/>
+                    <StringItem index="197" value="Pinwatta"/>
+                    <StringItem index="198" value="Panadura"/>
+                    <StringItem index="199" value="Bolgoda Lake"/>
+                    <StringItem index="200" value="Egoda Uyana"/>
+                    <StringItem index="201" value="Koralawalla"/>
+                    <StringItem index="202" value="Moratuwa"/>
+                    <StringItem index="203" value="Lunawa"/>
+                    <StringItem index="204" value="Angulana"/>
+                    <StringItem index="205" value="Ratmalana"/>
+                    <StringItem index="206" value="Running Shed"/>
+                  </StringArray>
+                </Property>
+                <Property name="selectedIndex" type="int" value="-1"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder>
+                      <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboendActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="combostart">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI Semibold" size="14" style="0"/>
+                </Property>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="207">
+                    <StringItem index="0" value="Colombo Fort"/>
+                    <StringItem index="1" value="Maradana"/>
+                    <StringItem index="2" value="Dematagoda"/>
+                    <StringItem index="3" value="Kelaniya"/>
+                    <StringItem index="4" value="Wanawasala"/>
+                    <StringItem index="5" value="Hunupitiya"/>
+                    <StringItem index="6" value="Enderamulla"/>
+                    <StringItem index="7" value="Horape"/>
+                    <StringItem index="8" value="Ragama"/>
+                    <StringItem index="9" value="Walpola"/>
+                    <StringItem index="10" value="Batuwatte"/>
+                    <StringItem index="11" value="Bulugahagoda"/>
+                    <StringItem index="12" value="Ganemulla"/>
+                    <StringItem index="13" value="Yagoda"/>
+                    <StringItem index="14" value="Gampaha"/>
+                    <StringItem index="15" value="Daraluwa"/>
+                    <StringItem index="16" value="Bemmulla"/>
+                    <StringItem index="17" value="Magelegoda"/>
+                    <StringItem index="18" value="Heendeniya"/>
+                    <StringItem index="19" value="Veyangoda"/>
+                    <StringItem index="20" value="Wandurawa"/>
+                    <StringItem index="21" value="Keenawala"/>
+                    <StringItem index="22" value="Pallewela"/>
+                    <StringItem index="23" value="Ganegoda"/>
+                    <StringItem index="24" value="Wijayarajadahana"/>
+                    <StringItem index="25" value="Mihirigama"/>
+                    <StringItem index="26" value="Wilwatte"/>
+                    <StringItem index="27" value="Botale"/>
+                    <StringItem index="28" value="Abeypussa"/>
+                    <StringItem index="29" value="Yattalgoda"/>
+                    <StringItem index="30" value="Buthgamuwa"/>
+                    <StringItem index="31" value="Alawwa"/>
+                    <StringItem index="32" value="Walakubura"/>
+                    <StringItem index="33" value="Polgahawela"/>
+                    <StringItem index="34" value="Panaleeya"/>
+                    <StringItem index="35" value="Tismalpola"/>
+                    <StringItem index="36" value="Yatagama"/>
+                    <StringItem index="37" value="Rambukkana"/>
+                    <StringItem index="38" value="Kadigamuwa"/>
+                    <StringItem index="39" value="Gangoda"/>
+                    <StringItem index="40" value="Ihalakotte"/>
+                    <StringItem index="41" value="Balana"/>
+                    <StringItem index="42" value="Kadugannawa"/>
+                    <StringItem index="43" value="Pilimatalawa"/>
+                    <StringItem index="44" value="Peradeniya"/>
+                    <StringItem index="45" value="Koshinna"/>
+                    <StringItem index="46" value="Gelioya"/>
+                    <StringItem index="47" value="Gampola"/>
+                    <StringItem index="48" value="Thawigala"/>
+                    <StringItem index="49" value="Ulapone"/>
+                    <StringItem index="50" value="Nawalapitiya"/>
+                    <StringItem index="51" value="Inguruoya"/>
+                    <StringItem index="52" value="Galaboda"/>
+                    <StringItem index="53" value="Watawala"/>
+                    <StringItem index="54" value="Ihalawatawala"/>
+                    <StringItem index="55" value="Rosella"/>
+                    <StringItem index="56" value="Hatton"/>
+                    <StringItem index="57" value="Kotagala"/>
+                    <StringItem index="58" value="Talawakele"/>
+                    <StringItem index="59" value="Watagoda"/>
+                    <StringItem index="60" value="Great Western"/>
+                    <StringItem index="61" value="Radella"/>
+                    <StringItem index="62" value="Nanuoya"/>
+                    <StringItem index="63" value="Perakumpura"/>
+                    <StringItem index="64" value="Ambewela"/>
+                    <StringItem index="65" value="Pattipola"/>
+                    <StringItem index="66" value="Ohiya"/>
+                    <StringItem index="67" value="Idalgasinna"/>
+                    <StringItem index="68" value="Haputale"/>
+                    <StringItem index="69" value="Deyatalawa"/>
+                    <StringItem index="70" value="Bandarawela"/>
+                    <StringItem index="71" value="Kinigama"/>
+                    <StringItem index="72" value="Heeloya"/>
+                    <StringItem index="73" value="Kitalelle"/>
+                    <StringItem index="74" value="Ella"/>
+                    <StringItem index="75" value="Demodara"/>
+                    <StringItem index="76" value="Uduwara"/>
+                    <StringItem index="77" value="Hali Ela"/>
+                    <StringItem index="78" value="Badulla"/>
+                    <StringItem index="79" value="Matale"/>
+                    <StringItem index="80" value="Peradeniya Junction"/>
+                    <StringItem index="81" value="KiribathKumbura"/>
+                    <StringItem index="82" value="Barammane"/>
+                    <StringItem index="83" value="Pilimatalawa"/>
+                    <StringItem index="84" value="Urapola"/>
+                    <StringItem index="85" value="Kotabagolla"/>
+                    <StringItem index="86" value="Kadugannawa"/>
+                    <StringItem index="87" value="Weralugolla"/>
+                    <StringItem index="88" value="Balana"/>
+                    <StringItem index="89" value="Makehelwala"/>
+                    <StringItem index="90" value="Bambaragala"/>
+                    <StringItem index="91" value="Ihalakotte"/>
+                    <StringItem index="92" value="Gangoda"/>
+                    <StringItem index="93" value="Yatiwaldeinya"/>
+                    <StringItem index="94" value="Kadigamuwa"/>
+                    <StringItem index="95" value="Rambukkan Oya"/>
+                    <StringItem index="96" value="Yatagama"/>
+                    <StringItem index="97" value="Korossa"/>
+                    <StringItem index="98" value="Tismalpola"/>
+                    <StringItem index="99" value="Panaliya"/>
+                    <StringItem index="100" value="Polgahawela Junction"/>
+                    <StringItem index="101" value="Walakumbura"/>
+                    <StringItem index="102" value="Bujjomuwa"/>
+                    <StringItem index="103" value="Yattalgoda"/>
+                    <StringItem index="104" value="Maha Oya"/>
+                    <StringItem index="105" value="Ambepussa"/>
+                    <StringItem index="106" value="Botale"/>
+                    <StringItem index="107" value="Tunnel No. 1"/>
+                    <StringItem index="108" value="Wilwatta"/>
+                    <StringItem index="109" value="Mirigama"/>
+                    <StringItem index="110" value="Wijayarajadahana"/>
+                    <StringItem index="111" value="E04 Central Expressway"/>
+                    <StringItem index="112" value="Ganegoda"/>
+                    <StringItem index="113" value="Pallewela"/>
+                    <StringItem index="114" value="Keenawala"/>
+                    <StringItem index="115" value="Wadurawa"/>
+                    <StringItem index="116" value="Veyangoda"/>
+                    <StringItem index="117" value="Heendeniya Pattiyagoda"/>
+                    <StringItem index="118" value="Magalegoda"/>
+                    <StringItem index="119" value="Bemmulla"/>
+                    <StringItem index="120" value="Daraluwa"/>
+                    <StringItem index="121" value="Gampaha"/>
+                    <StringItem index="122" value="Attanagalu Oya"/>
+                    <StringItem index="123" value="Yagoda"/>
+                    <StringItem index="124" value="Ganemulla"/>
+                    <StringItem index="125" value="Bulugahagoda"/>
+                    <StringItem index="126" value="Batuwaththa"/>
+                    <StringItem index="127" value="Walpola"/>
+                    <StringItem index="128" value="Puttalam Line"/>
+                    <StringItem index="129" value="Ragama Junction"/>
+                    <StringItem index="130" value="Horape"/>
+                    <StringItem index="131" value="Ederamulla"/>
+                    <StringItem index="132" value="Hunupitiya"/>
+                    <StringItem index="133" value="Wanawasala"/>
+                    <StringItem index="134" value="Kelaniya"/>
+                    <StringItem index="135" value="Kelani River"/>
+                    <StringItem index="136" value="Dematagoda"/>
+                    <StringItem index="137" value="Kelani Valley Line"/>
+                    <StringItem index="138" value="Maradana"/>
+                    <StringItem index="139" value="Colombo Fort"/>
+                    <StringItem index="140" value="Coast Line"/>
+                    <StringItem index="141" value="Katharagama"/>
+                    <StringItem index="142" value="Hambantota"/>
+                    <StringItem index="143" value="Beliatta"/>
+                    <StringItem index="144" value="Dedduwawala"/>
+                    <StringItem index="145" value="Wavurukannala"/>
+                    <StringItem index="146" value="Akurubebila Tunnel"/>
+                    <StringItem index="147" value="Babarenda"/>
+                    <StringItem index="148" value="Kekanadura"/>
+                    <StringItem index="149" value="Nakuttiyagama Tunnel"/>
+                    <StringItem index="150" value="Weherahena"/>
+                    <StringItem index="151" value="Nilwala Ganga"/>
+                    <StringItem index="152" value="Piladuwa"/>
+                    <StringItem index="153" value="Walgama"/>
+                    <StringItem index="154" value="Kamburugamuwa"/>
+                    <StringItem index="155" value="Midigama"/>
+                    <StringItem index="156" value="Ahangama"/>
+                    <StringItem index="157" value="Kathaluwa"/>
+                    <StringItem index="158" value="Koggala Lagoon"/>
+                    <StringItem index="159" value="Talpe"/>
+                    <StringItem index="160" value="Unawatuna"/>
+                    <StringItem index="161" value="Katugoda"/>
+                    <StringItem index="162" value="Richmond Hill"/>
+                    <StringItem index="163" value="Piyadigama"/>
+                    <StringItem index="164" value="Ginthota"/>
+                    <StringItem index="165" value="Gin Ganga"/>
+                    <StringItem index="166" value="Boossa"/>
+                    <StringItem index="167" value="Rathgama Lagoon"/>
+                    <StringItem index="168" value="Kumarakanda"/>
+                    <StringItem index="169" value="Sinigama"/>
+                    <StringItem index="170" value="Telwatta"/>
+                    <StringItem index="171" value="Kahawa"/>
+                    <StringItem index="172" value="Akurala"/>
+                    <StringItem index="173" value="Madampe Lagoon"/>
+                    <StringItem index="174" value="Ambalangoda"/>
+                    <StringItem index="175" value="Kandegoda"/>
+                    <StringItem index="176" value="Andadola"/>
+                    <StringItem index="177" value="Madu Ganga"/>
+                    <StringItem index="178" value="Balapitiya"/>
+                    <StringItem index="179" value="Pathagangoda"/>
+                    <StringItem index="180" value="Ahungalla"/>
+                    <StringItem index="181" value="Piyagama"/>
+                    <StringItem index="182" value="Kosgoda"/>
+                    <StringItem index="183" value="Maha Induruwa"/>
+                    <StringItem index="184" value="Induruwa"/>
+                    <StringItem index="185" value="Bentota"/>
+                    <StringItem index="186" value="Benthota Ganga"/>
+                    <StringItem index="187" value="Hettimulla"/>
+                    <StringItem index="188" value="Beruwala"/>
+                    <StringItem index="189" value="Maggona"/>
+                    <StringItem index="190" value="Paiyagala South"/>
+                    <StringItem index="191" value="Paiyagala North"/>
+                    <StringItem index="192" value="Katukurunda"/>
+                    <StringItem index="193" value="Kalutara South"/>
+                    <StringItem index="194" value="Kalutara North"/>
+                    <StringItem index="195" value="Train Halt No 01"/>
+                    <StringItem index="196" value="Wadduwa"/>
+                    <StringItem index="197" value="Pinwatta"/>
+                    <StringItem index="198" value="Panadura"/>
+                    <StringItem index="199" value="Bolgoda Lake"/>
+                    <StringItem index="200" value="Egoda Uyana"/>
+                    <StringItem index="201" value="Koralawalla"/>
+                    <StringItem index="202" value="Moratuwa"/>
+                    <StringItem index="203" value="Lunawa"/>
+                    <StringItem index="204" value="Angulana"/>
+                    <StringItem index="205" value="Ratmalana"/>
+                    <StringItem index="206" value="Running Shed"/>
+                  </StringArray>
+                </Property>
+                <Property name="selectedIndex" type="int" value="-1"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder>
+                      <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="combostartActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel6">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="33" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="14" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="33" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="From "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel7">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="33" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="14" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="33" red="33" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="To"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="btnselect">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="99" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Search"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnselectActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Search Train"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Booking Report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3fa1f078-2e27-49b9-95b0-dce3134aedbc">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="trainsystem"/>
+	<queryString language="SQL">
+		<![CDATA[select * from booking]]>
+	</queryString>
+	<field name="Bid" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Bid"/>
+		<property name="com.jaspersoft.studio.field.label" value="Bid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="Cname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Cname"/>
+		<property name="com.jaspersoft.studio.field.label" value="Cname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="tid" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="tid"/>
+		<property name="com.jaspersoft.studio.field.label" value="tid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="start" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="start"/>
+		<property name="com.jaspersoft.studio.field.label" value="start"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="end" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="end"/>
+		<property name="com.jaspersoft.studio.field.label" value="end"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="seats" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="seats"/>
+		<property name="com.jaspersoft.studio.field.label" value="seats"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="Date_Time" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Date_Time"/>
+		<property name="com.jaspersoft.studio.field.label" value="Date_Time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="total" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="total"/>
+		<property name="com.jaspersoft.studio.field.label" value="total"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="10" width="595" height="39" uuid="7e24735e-1160-4c5c-85bd-0e0ec142ee94"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Booking Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-22" y="49" width="596" height="30" uuid="a77968e7-96f4-45f9-9d7a-643f963b8885"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Train Reservation System]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="400" y="11" width="88" height="18" uuid="67b27158-26f8-4cac-bd21-620676c1ce9f"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="491" y="11" width="60" height="18" uuid="1a56baa1-06b9-40da-9683-d6395ae3dd9c"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="97" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="51" width="551" height="39" uuid="2c175a75-641a-47af-9a49-e528ecf2e32b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="60" width="60" height="20" uuid="a37062d8-378d-43e6-82b7-90e7b284b62f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Booking ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="60" width="100" height="20" uuid="7a255155-cd7d-46dd-80b1-5efa438d420f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Customer Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="60" width="80" height="21" uuid="db67e6b3-4d90-4a5c-97d7-1596833ccb25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[From]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="60" width="70" height="20" uuid="2f1bc185-a5fc-4a07-a911-949404865aca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[To]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="61" width="80" height="19" uuid="1362fe1d-5299-49cc-98da-7f1679096024"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Date and Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="60" width="80" height="20" uuid="dd7132c9-aeca-4d76-9dc4-7be1d13c9291"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Ticket ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="62" width="81" height="19" uuid="053ab183-e8a5-46ea-9225-2cf578615f05"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<line>
+				<reportElement x="60" y="51" width="1" height="39" uuid="425d17bb-3911-40f0-bd0b-d8ba3ac5ceac"/>
+			</line>
+			<line>
+				<reportElement x="159" y="50" width="1" height="39" uuid="e6c92121-ad46-4684-a454-51cb8710a87f"/>
+			</line>
+			<line>
+				<reportElement x="240" y="51" width="1" height="39" uuid="eff314a2-0811-4444-8abf-e1f0183203ce"/>
+			</line>
+			<line>
+				<reportElement x="320" y="50" width="1" height="42" uuid="6a061323-686c-4e3b-b539-90e919f11150"/>
+			</line>
+			<line>
+				<reportElement x="390" y="50" width="1" height="42" uuid="f7177244-4d2e-4b0f-b3a2-059b3b5a1078"/>
+			</line>
+			<line>
+				<reportElement x="470" y="51" width="1" height="42" uuid="f482d0ce-0bdb-4472-a0ff-ee2dbb3676c4"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="65" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="-8" width="551" height="67" uuid="34f7949a-468a-423d-8e8c-5f5d410209ab"/>
+			</rectangle>
+			<line>
+				<reportElement x="60" y="-7" width="1" height="66" uuid="6db60f38-a9c6-42c4-91a6-5b9b9b174ae1"/>
+			</line>
+			<line>
+				<reportElement x="159" y="-8" width="1" height="66" uuid="f32cd2e1-c063-457e-9426-a20142fad42a"/>
+			</line>
+			<line>
+				<reportElement x="240" y="-7" width="1" height="66" uuid="a3664523-896a-4595-9cbe-5bf2511117bf"/>
+			</line>
+			<line>
+				<reportElement x="320" y="-7" width="1" height="66" uuid="e86687ca-3158-40bb-8499-ce856941d6e2"/>
+			</line>
+			<line>
+				<reportElement x="390" y="-8" width="1" height="66" uuid="942b82ac-d7b8-45c3-be3f-62f85191d364"/>
+			</line>
+			<line>
+				<reportElement x="470" y="-8" width="1" height="66" uuid="658df6c3-92b0-4fd2-b2c4-00c7d48c8e20"/>
+			</line>
+			<textField>
+				<reportElement x="10" y="10" width="41" height="30" uuid="4f234d43-ace7-4c5e-adcf-59ad490f34b9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Bid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="61" y="10" width="98" height="30" uuid="aeb5faff-f832-496b-a7fe-ac8288efa8a9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Cname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="11" width="81" height="30" uuid="a02df110-fa84-4de0-ae8f-0e5ae2c01a8e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="10" width="81" height="30" uuid="492d1481-5ffd-488d-9c29-64e3de45405b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{start}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="321" y="10" width="69" height="30" uuid="4fdb0e35-07bf-48c0-980b-5f243ebd9baf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{end}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="391" y="11" width="79" height="30" uuid="e30ff7c0-5e0f-48c0-9fbc-19ac1815c533"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Date_Time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="10" width="81" height="30" uuid="69573211-f06d-4b16-9c9a-bc54ebaf4e05"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="-21" y="4" width="594" height="30" uuid="98b0a49a-ca71-4048-b074-342af720154c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19"/>
+				</textElement>
+				<text><![CDATA[Thank You...]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-21" y="34" width="596" height="19" uuid="3967f60c-ae4c-4c6e-9019-4f6e8b910e1c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[This report genarated by system]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
