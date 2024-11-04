@@ -101,8 +101,6 @@ The implementation phase saw the actual coding and development of the system.
 
 NetBeans IDE 22: Used for coding and development. The environment provided essential features for writing and debugging Java code.
 
-MariaDB: Employed for database management. The server handled data storage, retrieval, and manipulation, ensuring secure and efficient database operations.
-
 Apache & PHP: Used to handle server-side scripting, facilitating smooth communication between the server and client-side components.
 
 phpMyAdmin: Aided in database management tasks, such as running queries and managing database tables.
@@ -122,8 +120,6 @@ Post-deployment, the system requires ongoing maintenance to address any issues t
 
 Key Tools and Technologies:
 NetBeans IDE 22: For application design and development.
-
-MariaDB: For robust database management.
 
 Apache & PHP: For server-side operations.
 
